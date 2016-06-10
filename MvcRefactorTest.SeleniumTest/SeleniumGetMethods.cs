@@ -31,15 +31,15 @@ namespace MvcRefactorTest.SeleniumTest
             switch (elementType)
             {
                 case PropertyType.Id:
-                    var singleOrDefault =
+                    var First =
                         new SelectElement(PropertiesCollection.Driver.FindElement(By.Id(element))).AllSelectedOptions
-                            .SingleOrDefault();
-                    if (singleOrDefault != null) return singleOrDefault.Text;
+                            .First();
+                    if (First != null) return First.Text;
                     break;
                 case PropertyType.Name:
                     var webElement =
                         new SelectElement(PropertiesCollection.Driver.FindElement(By.Name(element))).AllSelectedOptions
-                            .SingleOrDefault();
+                            .First();
                     if (webElement != null) return webElement.Text;
                     break;
                 default:

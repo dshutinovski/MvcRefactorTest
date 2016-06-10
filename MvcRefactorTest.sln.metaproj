@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" InitialTargets="ValidateSolutionConfiguration;ValidateToolsVersions;ValidateProjects" DefaultTargets="Build">
+  <PropertyGroup>
+    <MSBuildToolsPath32>C:\Program Files (x86)\MSBuild\12.0\bin\</MSBuildToolsPath32>
+    <MSBuildToolsRoot>C:\Program Files (x86)\MSBuild\</MSBuildToolsRoot>
+    <MSBuildFrameworkToolsPath>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\</MSBuildFrameworkToolsPath>
+    <MSBuildFrameworkToolsPath32>C:\WINDOWS\Microsoft.NET\Framework\v4.0.30319\</MSBuildFrameworkToolsPath32>
+    <MSBuildFrameworkToolsRoot>C:\WINDOWS\Microsoft.NET\Framework\</MSBuildFrameworkToolsRoot>
+    <MSBuildRuntimeVersion>4.0.30319</MSBuildRuntimeVersion>
+    <FrameworkSDKRoot>C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\</FrameworkSDKRoot>
+    <SDK35ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\</SDK35ToolsPath>
+    <SDK40ToolsPath>C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\</SDK40ToolsPath>
+    <VCTargetsPath>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\</VCTargetsPath>
+    <VCTargetsPath10>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\</VCTargetsPath10>
+    <VCTargetsPath11>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\</VCTargetsPath11>
+    <VCTargetsPath12>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\</VCTargetsPath12>
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+    <WindowsSDK80Path>C:\Program Files (x86)\Windows Kits\8.1\</WindowsSDK80Path>
+    <Configuration>Debug</Configuration>
+    <Platform>Any CPU</Platform>
+    <AspNetConfiguration>Debug</AspNetConfiguration>
+    <SolutionDir>E:\TeamCity\buildAgent\work\39236d9fea70f0c4\</SolutionDir>
+    <SolutionExt>.sln</SolutionExt>
+    <SolutionFileName>MvcRefactorTest.sln</SolutionFileName>
+    <SolutionName>MvcRefactorTest</SolutionName>
+    <SolutionPath>E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.sln</SolutionPath>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <CurrentSolutionConfigurationContents>
+      <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{7C1C9BC2-D3A8-4519-B5E7-C20CDD1D8AD9}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F422F79-6AA7-4978-ACEB-D4A6B4387B02}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D03265F4-123A-41CA-8793-5293315F2505}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{897BDE9B-A072-4E8C-AC0C-00C22F5B6B07}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1D5430AE-1804-48C8-BCDE-7793480C7B4C}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{707C7056-1E53-474B-95BA-65B5C7221593}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F4A33C1C-EC4D-4A38-B2AE-D2F71E1404F6}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+    </CurrentSolutionConfigurationContents>
+  </PropertyGroup>
+  <ItemDefinitionGroup />
+  <ItemGroup>
+    <SolutionConfiguration Include="Debug|Any CPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{7C1C9BC2-D3A8-4519-B5E7-C20CDD1D8AD9}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F422F79-6AA7-4978-ACEB-D4A6B4387B02}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D03265F4-123A-41CA-8793-5293315F2505}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{897BDE9B-A072-4E8C-AC0C-00C22F5B6B07}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1D5430AE-1804-48C8-BCDE-7793480C7B4C}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{707C7056-1E53-474B-95BA-65B5C7221593}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F4A33C1C-EC4D-4A38-B2AE-D2F71E1404F6}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj" BuildProjectInSolution="True">Debug|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+    <SolutionConfiguration Include="Release|Any CPU">
+      <Configuration>Release</Configuration>
+      <Platform>Any CPU</Platform>
+      <Content>
+        <SolutionConfiguration xmlns="">
+  <ProjectConfiguration Project="{7C1C9BC2-D3A8-4519-B5E7-C20CDD1D8AD9}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{3F422F79-6AA7-4978-ACEB-D4A6B4387B02}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{D03265F4-123A-41CA-8793-5293315F2505}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{897BDE9B-A072-4E8C-AC0C-00C22F5B6B07}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{1D5430AE-1804-48C8-BCDE-7793480C7B4C}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{707C7056-1E53-474B-95BA-65B5C7221593}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+  <ProjectConfiguration Project="{F4A33C1C-EC4D-4A38-B2AE-D2F71E1404F6}" AbsolutePath="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj" BuildProjectInSolution="True">Release|AnyCPU</ProjectConfiguration>
+</SolutionConfiguration>
+      </Content>
+    </SolutionConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+    <ProjectReference Include="E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj">
+      <ToolsVersion>
+      </ToolsVersion>
+      <SkipNonexistentProjects>False</SkipNonexistentProjects>
+      <AdditionalProperties>Configuration=Debug; Platform=AnyCPU</AdditionalProperties>
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectReference>
+  </ItemGroup>
+  <Target Name="ValidateSolutionConfiguration">
+    <Error Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Warning Condition="('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')" Text="The specified solution configuration &quot;$(Configuration)|$(Platform)&quot; is invalid. Please specify a valid solution configuration using the Configuration and Platform properties (e.g. MSBuild.exe Solution.sln /p:Configuration=Debug /p:Platform=&quot;Any CPU&quot;) or leave those properties blank to use the default solution configuration." Code="MSB4126" HelpKeyword="MSBuild.SolutionInvalidSolutionConfiguration" />
+    <Message Condition="'$(CurrentSolutionConfigurationContents)' != ''" Text="Building solution configuration &quot;$(Configuration)|$(Platform)&quot;." />
+  </Target>
+  <Target Name="ValidateToolsVersions">
+    <Error Condition="'$(MSBuildToolsVersion)' == '2.0' and ('$(ProjectToolsVersion)' != '2.0' and '$(ProjectToolsVersion)' != '')" Text="The tools version &quot;$(MSBuildToolsVersion)&quot; of the solution does not support building projects with a different tools version." Code="MSB4149" HelpKeyword="MSBuild.SolutionToolsVersionDoesNotSupportProjectToolsVersion" />
+  </Target>
+  <Target Name="ValidateProjects" />
+  <Target Name="GetSolutionConfigurationContents" Outputs="$(SolutionConfigurationContents)" />
+  <Target Name="Build" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Clean">
+    <MSBuild Projects="@(ProjectReference-&gt;Reverse())" Targets="Clean" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="Rebuild" Outputs="@(CollectedBuildOutput)">
+    <MSBuild Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)">
+      <Output TaskParameter="TargetOutputs" ItemName="CollectedBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="Publish">
+    <MSBuild Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" Properties="BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" SkipNonexistentProjects="%(ProjectReference.SkipNonexistentProjects)" />
+  </Target>
+  <Target Name="MvcRefactorTest" Outputs="@(MvcRefactorTestBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTestBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest:Rebuild" Outputs="@(MvcRefactorTestBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTestBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest\MvcRefactorTest.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_Domain" Outputs="@(MvcRefactorTest_DomainBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_DomainBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_Domain:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_Domain:Rebuild" Outputs="@(MvcRefactorTest_DomainBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_DomainBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_Domain:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Domain\MvcRefactorTest.Domain.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_DAL" Outputs="@(MvcRefactorTest_DALBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_DALBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_DAL:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_DAL:Rebuild" Outputs="@(MvcRefactorTest_DALBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_DALBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_DAL:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.DAL\MvcRefactorTest.DAL.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_Common" Outputs="@(MvcRefactorTest_CommonBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_CommonBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_Common:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_Common:Rebuild" Outputs="@(MvcRefactorTest_CommonBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_CommonBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_Common:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.Common\MvcRefactorTest.Common.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_BL" Outputs="@(MvcRefactorTest_BLBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_BLBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_BL:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_BL:Rebuild" Outputs="@(MvcRefactorTest_BLBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_BLBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_BL:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.BL\MvcRefactorTest.BL.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_SeleniumTest" Outputs="@(MvcRefactorTest_SeleniumTestBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_SeleniumTestBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_SeleniumTest:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_SeleniumTest:Rebuild" Outputs="@(MvcRefactorTest_SeleniumTestBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_SeleniumTestBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_SeleniumTest:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.SeleniumTest\MvcRefactorTest.SeleniumTest.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_NUnitTests" Outputs="@(MvcRefactorTest_NUnitTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj'" Projects="@(ProjectReference)" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_NUnitTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_NUnitTests:Clean">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj'" Projects="@(ProjectReference)" Targets="Clean" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+  <Target Name="MvcRefactorTest_NUnitTests:Rebuild" Outputs="@(MvcRefactorTest_NUnitTestsBuildOutput)">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj'" Projects="@(ProjectReference)" Targets="Rebuild" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)">
+      <Output TaskParameter="TargetOutputs" ItemName="MvcRefactorTest_NUnitTestsBuildOutput" />
+    </MSBuild>
+  </Target>
+  <Target Name="MvcRefactorTest_NUnitTests:Publish">
+    <MSBuild Condition="'%(ProjectReference.Identity)' == 'E:\TeamCity\buildAgent\work\39236d9fea70f0c4\MvcRefactorTest.NUnitTests\MvcRefactorTest.NUnitTests.csproj'" Projects="@(ProjectReference)" Targets="Publish" BuildInParallel="True" ToolsVersion="$(ProjectToolsVersion)" Properties="Configuration=Debug; Platform=AnyCPU;BuildingSolutionFile=true; CurrentSolutionConfigurationContents=$(CurrentSolutionConfigurationContents); SolutionDir=$(SolutionDir); SolutionExt=$(SolutionExt); SolutionFileName=$(SolutionFileName); SolutionName=$(SolutionName); SolutionPath=$(SolutionPath)" />
+  </Target>
+</Project>

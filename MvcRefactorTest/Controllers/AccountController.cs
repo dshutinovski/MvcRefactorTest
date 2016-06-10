@@ -41,7 +41,6 @@ namespace MvcRefactorTest.Controllers
                     if (this._authProvider.Authenticate(username, password)) if (this.SetupFormsAuthTicket(username, password, false)) return this.Redirect(this.Url.Action("Index", "Home"));
                
             }
-            LogFactory.GetLogger().Info("OK");
             return this.View("Login");
         }
 

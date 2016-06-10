@@ -13,8 +13,6 @@ namespace MvcRefactorTest.DAL
     [LoggingAspect]
     public class ContactRepository : IContactRepository
     {
-        private readonly ILog _logger = LogFactory.GetLogger();
-
         private dbContext _context;
 
         /// <summary>

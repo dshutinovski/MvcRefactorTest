@@ -30,7 +30,8 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         {
             IKernel kernel = new StandardKernel();
             var samurai =
-            this._userRepository = kernel.Get<UserRepository>(new ConstructorArgument("context", kernel.Get<dbContext>()));
+                this._userRepository =
+                kernel.Get<UserRepository>(new ConstructorArgument("context", kernel.Get<dbContext>()));
             this._userService = kernel.Get<UserService>(new ConstructorArgument("userRepository", _userRepository));
         }
 
@@ -62,14 +63,13 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         /// <returns>Find all of Users in the role.</returns>
         public override string[] FindUsersInRole(string roleName, string usernameToMatch)
         {
-            try
+            IList<User> userList;
+            if (this._userService.GetAllUsers(out userList))
             {
-                IList<User> userList;
-                if (this._userService.GetAllUsers(out userList)) if (userList != null) return userList.Where(p => p.Role == roleName).Select(p => p.Name).ToArray();
-            }
-            catch (Exception ex)
-            {
-                LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
+                if (userList != null)
+                {
+                    return userList.Where(p => p.Role == roleName).Select(p => p.Name).ToArray();
+                }
             }
 
             return new string[] { };
@@ -87,14 +87,13 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         /// <returns>Get roles for user as array of strings.</returns>
         public override string[] GetRolesForUser(string username)
         {
-            try
+            User userObj;
+            if (this._userService.GetUserBy(username, out userObj))
             {
-                User userObj;
-                if (this._userService.GetUserBy(username, out userObj)) if (userObj != null) return userObj.Role != null ? new[] { userObj.Role } : new string[] { };
-            }
-            catch (Exception ex)
-            {
-                LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
+                if (userObj != null)
+                {
+                    return userObj.Role != null ? new[] { userObj.Role } : new string[] { };
+                }
             }
 
             return new string[] { };
@@ -113,14 +112,13 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         /// <returns>Returns true if exists, else false</returns>
         public override bool IsUserInRole(string username, string roleName)
         {
-            try
+            User userObj;
+            if (this._userService.GetUserBy(username, out userObj))
             {
-                User userObj;
-                if (this._userService.GetUserBy(username, out userObj)) if (userObj != null) return userObj.Role != null && userObj.Role == roleName;
-            }
-            catch (Exception ex)
-            {
-                LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
+                if (userObj != null)
+                {
+                    return userObj.Role != null && userObj.Role == roleName;
+                }
             }
 
             return false;
@@ -134,24 +132,25 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         public override void RemoveUsersFromRoles(string[] usernames, string[] roleNames)
         {
             throw new NotImplementedException();
-            //try
-            //{
-            //    foreach (var user in usernames)
-            //    {
-            //        User userObj;
-            //        if (!this._userService.GetUserBy(user, out userObj)) continue;
-            //        foreach (var role in roleNames)
-            //        {
-            //            if (userObj == null) continue;
-            //            userObj.Role = string.Empty;
-            //            this._userService.RemoveUserFromRole(user, role, out userObj);
-            //        }
-            //    }
-            //}
-            //catch (Exception ex)
-            //{
-            //    LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
-            //}
+
+            // try
+            // {
+            // foreach (var user in usernames)
+            // {
+            // User userObj;
+            // if (!this._userService.GetUserBy(user, out userObj)) continue;
+            // foreach (var role in roleNames)
+            // {
+            // if (userObj == null) continue;
+            // userObj.Role = string.Empty;
+            // this._userService.RemoveUserFromRole(user, role, out userObj);
+            // }
+            // }
+            // }
+            // catch (Exception ex)
+            // {
+            // LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
+            // }
         }
 
         public override bool RoleExists(string roleName)

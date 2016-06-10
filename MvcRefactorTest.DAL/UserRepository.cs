@@ -23,29 +23,6 @@
         }
 
         /// <summary>
-        ///     Create new User.
-        /// </summary>
-        /// <param name="fullName">User full name.</param>
-        /// <param name="password">User Password.</param>
-        /// <param name="role">User Role.</param>
-        /// <param name="userObj">User object to be retrieved.</param>
-        /// <returns>Return true if success, else false.</returns>
-        // public bool CreateUser(string fullName, string password, string role, out User userObj)
-        // {
-        // var succeed = false;
-
-        // using (this._context = new dbContext())
-        // {
-        // userObj = new User { Name = fullName, Password = password, Role = role, IsEnabled = true };
-        // this._context.User.Add(userObj);
-        // this._context.SaveChanges();
-
-        // succeed = true;
-        // }
-
-        // return succeed;
-        // }
-        /// <summary>
         ///     Get All users
         /// </summary>
         /// <param name="userList">user List</param>
@@ -86,7 +63,7 @@
         {
             var succeed = false;
 
-            userObj = this._context.User.SingleOrDefault(p => p.id == id);
+            userObj = this._context.User.First(p => p.id == id);
             succeed = true;
 
             return succeed;
@@ -102,32 +79,11 @@
         {
             var succeed = false;
 
-            userObj = this._context.User.SingleOrDefault(p => p.Name == name);
+            userObj = this._context.User.First(p => p.Name == name);
             succeed = true;
 
             return succeed;
         }
-
-        /// <summary>
-        ///     Remove user from Role.
-        /// </summary>
-        /// <param name="fullName">User full name.</param>
-        /// <param name="role">User Role.</param>
-        /// <param name="userObj">User object to be retrieved.</param>
-        /// <returns>Return true if success, else false.</returns>
-        // public bool RemoveUserFromRole(string fullName, string role, out User userObj)
-        // {
-        // var succeed = false;
-
-        // using (this._context = new dbContext())
-        // {
-        // userObj = this._context.User.SingleOrDefault(p => p.Name == fullName);
-        // if (userObj != null && userObj.Role == role) userObj.Role = string.Empty;
-
-        // this._context.SaveChanges();
-
-        // succeed = true;
-        // }
 
         // return succeed;
         // }
@@ -140,14 +96,7 @@
         /// <returns>Returns true if success, else false.</returns>
         public bool ValidateUser(string userName, string password, out bool isValid)
         {
-            var succeed = false;
-
-            isValid = this._context.User.SingleOrDefault(p => p.Name == userName && p.Password == password) != null
-                          ? true
-                          : false;
-            succeed = true;
-
-            return succeed;
+            return isValid = this._context.User.First(p => p.Name == userName && p.Password == password) != null ? true : false;
         }
 
         /// <summary>
@@ -160,17 +109,15 @@
         {
             var succeed = false;
 
-            var userObj = this._context.User.SingleOrDefault(p => p.Name == fullName);
+            var userObj = this._context.User.First(p => p.Name == fullName);
             if (userObj != null)
             {
                 userObj.Password = password;
             }
 
-            ((dbContext)_context).SaveChanges();
+            _context.SaveChanges();
 
-            succeed = true;
-
-            return succeed;
+            return succeed = true;
         }
     }
 }

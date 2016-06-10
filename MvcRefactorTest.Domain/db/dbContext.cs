@@ -12,10 +12,10 @@ namespace MvcRefactorTest.Domain.db
             this.Configuration.LazyLoadingEnabled = false;
         }
 
-        public virtual DbSet<Contact> Contact { get; set; }
+        public virtual IDbSet<Contact> Contact { get; set; }
 
-        public virtual DbSet<Log> Log { get; set; }
+        public virtual IDbSet<Log> Log { get; set; }
 
-        public virtual DbSet<User> User { get; set; }
+        public virtual IDbSet<User> User { get; set; }
     }
 }

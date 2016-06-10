@@ -112,18 +112,19 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         public override bool ChangePassword(string username, string oldPassword, string newPassword)
         {
             throw new NotImplementedException();
-            //var success = false;
 
-            //try
-            //{
-            //    if (this._userRepository.ChangePassword(username, newPassword)) success = true;
-            //}
-            //catch (Exception ex)
-            //{
-            //    LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
-            //}
+            // var success = false;
 
-            //return success;
+            // try
+            // {
+            // if (this._userRepository.ChangePassword(username, newPassword)) success = true;
+            // }
+            // catch (Exception ex)
+            // {
+            // LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
+            // }
+
+            // return success;
         }
 
         public override bool ChangePasswordQuestionAndAnswer(
@@ -220,14 +221,7 @@ namespace MvcRefactorTest.Infrastructure.Concrete
         {
             var isValid = false;
 
-            try
-            {
-                this._userRepository.ValidateUser(username, password, out isValid);
-            }
-            catch (Exception ex)
-            {
-                LogFactory.GetLogger().Error(ex.Message, ex.InnerException);
-            }
+            this._userRepository.ValidateUser(username, password, out isValid);
 
             return isValid;
         }
