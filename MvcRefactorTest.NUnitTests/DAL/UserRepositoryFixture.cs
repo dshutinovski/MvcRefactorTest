@@ -99,6 +99,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = userRepository.GetAllUsersBy(true, out testUserList);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That(2, Is.EqualTo(testUserList.Count));
         }
@@ -116,6 +117,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = _userRepository.GetAllUsers(out testUser);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That(3, Is.EqualTo(testUser.Count));
             Assert.That(null, Is.Not.EqualTo(testUser));
@@ -137,6 +139,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = _userRepository.GetUserBy(2, out testUser);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That("Chris Smith", Is.EqualTo(testUser.Name));
             Assert.That("Richard Child", Is.Not.EqualTo(testUser.Name));
@@ -159,6 +162,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = _userRepository.GetUserBy(userName, out testUser);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             if (userName == testUser.Name)
             {
@@ -185,6 +189,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = _userRepository.GetUserBy(userName, out testUser);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(false, Is.EqualTo(success));
         }
 
@@ -204,6 +209,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = _userRepository.ChangePassword(userName, password);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
         }
 
@@ -223,6 +229,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             var success = _userRepository.ChangePassword(userName, password);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(false, Is.EqualTo(success));
         }
 
@@ -241,6 +248,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             bool success = _userRepository.ValidateUser(userName, password, out isValid);
 
             // assert
+            _dbContextMock.VerifyAll();
             if (success)
             {
                 Assert.That(true, Is.EqualTo(success));
@@ -266,6 +274,7 @@ namespace MvcRefactorTest.NUnitTests.DAL
             bool success = _userRepository.ValidateUser(userName, password, out isValid);
 
             // assert
+            _dbContextMock.VerifyAll();
             Assert.That(false, Is.EqualTo(success));
         }
     }

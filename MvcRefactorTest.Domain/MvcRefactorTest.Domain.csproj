@@ -51,7 +51,6 @@
   <ItemGroup>
     <Compile Include="base\BaseClass.cs" />
     <Compile Include="Contact.cs" />
-    <Compile Include="db\IDbContext.cs" />
     <Compile Include="Log.cs" />
     <Compile Include="Migrations\201505092240444_GenerateBataBase.cs" />
     <Compile Include="Migrations\201505092240444_GenerateBataBase.Designer.cs">

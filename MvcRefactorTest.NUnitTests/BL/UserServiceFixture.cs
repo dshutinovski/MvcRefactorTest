@@ -31,7 +31,7 @@ namespace MvcRefactorTest.NUnitTests.BL
         public void InitializeUnitTests()
         {
             // create some mock products to play with
-            this._userObj = new User
+            _userObj = new User
                                 {
                                     Name = "Chris Smith",
                                     id = 2,
@@ -40,9 +40,9 @@ namespace MvcRefactorTest.NUnitTests.BL
                                     IsEnabled = true
                                 };
 
-            this._userList = new List<User>
+            _userList = new List<User>
                                  {
-                                     this._userObj, 
+                                     _userObj, 
                                      new User
                                          {
                                              Name = "Awin George", 
@@ -61,29 +61,30 @@ namespace MvcRefactorTest.NUnitTests.BL
                                          }
                                  };
 
-            this._mockUserRepository = new Mock<IUserRepository>();
+            _mockUserRepository = new Mock<IUserRepository>();
         }
 
         [TestFixtureTearDown]
         public void TearDownObjects()
         {
-            this._userList = null;
-            this._userObj = null;
-            this._mockUserRepository = null;
+            _userList = null;
+            _userObj = null;
+            _mockUserRepository = null;
         }
 
         [Test]
         public void WhenMethodGetAllUsersIsCalledUersReturnUsersTest()
         {
             // Return all users
-            this._mockUserRepository.Setup(mr => mr.GetAllUsers(out this._userList)).Returns(true);
+            _mockUserRepository.Setup(mr => mr.GetAllUsers(out _userList)).Returns(true);
 
             // setup of our Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
             IList<User> testUser;
             var success = target.GetAllUsers(out testUser);
 
             // assert
+            _mockUserRepository.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That(3, Is.EqualTo(testUser.Count));
             Assert.AreNotEqual(null, testUser);
@@ -96,14 +97,15 @@ namespace MvcRefactorTest.NUnitTests.BL
         public void WhenMethodGetAllUsersByActiveFlagTrueIsCalledUersReturnUsersTest()
         {
             // Return all users
-            this._mockUserRepository.Setup(mr => mr.GetAllUsersBy(true, out this._userList)).Returns(true);
+            _mockUserRepository.Setup(mr => mr.GetAllUsersBy(true, out _userList)).Returns(true);
 
             // setup of our Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
             IList<User> testUser;
             var success = target.GetAllUsersBy(true, out testUser);
 
             // assert
+            _mockUserRepository.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That(3, Is.EqualTo(testUser.Count));
             Assert.That(null, Is.Not.EqualTo(testUser));
@@ -116,14 +118,15 @@ namespace MvcRefactorTest.NUnitTests.BL
         public void WhenMethodGetAllUsersByActiveFlagFalseIsCalledUersReturnUsersTest()
         {
             // Return all users
-            this._mockUserRepository.Setup(mr => mr.GetAllUsersBy(false, out this._userList)).Returns(true);
+            _mockUserRepository.Setup(mr => mr.GetAllUsersBy(false, out _userList)).Returns(true);
 
             // setup of our Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
             IList<User> testUser;
             var success = target.GetAllUsersBy(false, out testUser);
 
             // assert
+            _mockUserRepository.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That(3, Is.EqualTo(testUser.Count));
             Assert.That(null, Is.Not.EqualTo(testUser));
@@ -136,14 +139,15 @@ namespace MvcRefactorTest.NUnitTests.BL
         public void WhenMethodGetUserByIdIsCalledReturnUserTest()
         {
             // Return a user by Id
-            this._mockUserRepository.Setup(mr => mr.GetUserBy(It.IsAny<int>(), out this._userObj)).Returns(true);
+            _mockUserRepository.Setup(mr => mr.GetUserBy(It.IsAny<int>(), out _userObj)).Returns(true);
 
             // setup of our Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
             User testUser;
             var success = target.GetUserBy(2, out testUser);
 
             // assert
+            _mockUserRepository.VerifyAll();
             Assert.That(true, Is.EqualTo(success));
             Assert.That("Chris Smith", Is.EqualTo(testUser.Name));
             Assert.That("Richard Child", Is.Not.EqualTo(testUser.Name));
@@ -156,10 +160,10 @@ namespace MvcRefactorTest.NUnitTests.BL
             [Values("Richard Child", "Chris Smith", "Awin George", "", null)] string userName)
         {
             // return a user by Name
-            this._mockUserRepository.Setup(mr => mr.GetUserBy(It.IsIn("Chris Smith"), out this._userObj)).Returns(true);
+            _mockUserRepository.Setup(mr => mr.GetUserBy(It.IsIn("Chris Smith"), out _userObj)).Returns(true);
 
             // setup of Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
             User testUser;
             var success = target.GetUserBy(userName, out testUser);
 
@@ -183,16 +187,16 @@ namespace MvcRefactorTest.NUnitTests.BL
         {
             // return valid user
             var Valid = true;
-            this._userObj = this._userList.FirstOrDefault(p => p.Name == userName && p.Password == password);
-            this._mockUserRepository.Setup(
+            _userObj = _userList.FirstOrDefault(p => p.Name == userName && p.Password == password);
+            _mockUserRepository.Setup(
                 mr =>
                 mr.ValidateUser(
-                    It.IsIn(this._userObj != null ? this._userObj.Name : string.Empty),
-                    It.IsIn(this._userObj != null ? this._userObj.Password : string.Empty),
+                    It.IsIn(_userObj != null ? _userObj.Name : string.Empty),
+                    It.IsIn(_userObj != null ? _userObj.Password : string.Empty),
                     out Valid)).Returns(true);
 
             // setup of Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
 
             var success = target.ValidateUser(userName, password, out Valid);
 
@@ -212,16 +216,16 @@ namespace MvcRefactorTest.NUnitTests.BL
         {
             // return valid user
             var isValid = true;
-            this._userObj = this._userList.FirstOrDefault(p => p.Name == userName && p.Password == password);
-            this._mockUserRepository.Setup(
+            _userObj = _userList.FirstOrDefault(p => p.Name == userName && p.Password == password);
+            _mockUserRepository.Setup(
                 mr =>
                 mr.ValidateUser(
-                    It.IsIn(this._userObj != null ? this._userObj.Name : string.Empty),
-                    It.IsIn(this._userObj != null ? this._userObj.Password : string.Empty),
+                    It.IsIn(_userObj != null ? _userObj.Name : string.Empty),
+                    It.IsIn(_userObj != null ? _userObj.Password : string.Empty),
                     out isValid)).Returns(false);
 
             // setup of Mock User Repository
-            var target = new UserService(this._mockUserRepository.Object);
+            var target = new UserService(_mockUserRepository.Object);
 
             var success = target.ValidateUser(userName, password, out isValid);
 
